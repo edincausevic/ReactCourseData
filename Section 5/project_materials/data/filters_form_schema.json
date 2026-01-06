@@ -1,0 +1,293 @@
+{
+  "id": 129830,
+  "fields": [
+    {
+      "id": 1,
+      "component": "TextInput",
+      "className": "mb-6",
+      "header": {
+        "label": {
+          "htmlFor": "location",
+          "text": "Location",
+          "className": "block text-sm font-medium text-gray-700 mb-2"
+        }
+      },
+      "body": {
+        "element": {
+          "icon": {
+            "src": "/icons/search.svg",
+            "alt": "Search",
+            "className": "w-[27px] absolute right-[4px] top-[8px] "
+          },
+          "attr": {
+            "id": "location",
+            "type": "text",
+            "name": "location",
+            "placeholder": "Where are you going?",
+            "minLength": 3,
+            "className": "w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+          }
+        }
+      }
+    },
+    {
+      "id": 2,
+      "className": "grid grid-cols-2 gap-2 mb-6",
+      "grid": [
+        {
+          "id": 3,
+          "component": "TextInput",
+          "className": "",
+          "header": {
+            "label": {
+              "htmlFor": "checkin",
+              "text": "Check-in",
+              "className": "block text-sm font-medium text-gray-700 mb-2"
+            }
+          },
+          "body": {
+            "element": {
+              "attr": {
+                "id": "checkin",
+                "type": "date",
+                "name": "checkin",
+                "className": "w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+              }
+            }
+          }
+        },
+        {
+          "id": 4,
+          "component": "TextInput",
+          "className": "",
+          "header": {
+            "label": {
+              "htmlFor": "checkout",
+              "text": "Check-out",
+              "className": "block text-sm font-medium text-gray-700 mb-2"
+            }
+          },
+          "body": {
+            "element": {
+              "attr": {
+                "id": "checkout",
+                "type": "date",
+                "name": "checkout",
+                "className": "w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "component": "Range",
+      "className": "mb-6",
+      "header": {
+        "label": {
+          "htmlFor": "price",
+          "text": "Price range",
+          "className": "block text-sm font-medium text-gray-700 mb-2"
+        }
+      },
+      "body": {
+        "element": {
+          "attr": {
+            "id": "price",
+            "type": "range",
+            "name": "price",
+            "min": 50,
+            "max": 2500,
+            "defaultValue": 250,
+            "className": "w-full mb-2"
+          }
+        }
+      }
+    },
+    {
+      "id": 6,
+      "component": "Checkbox",
+      "className": "mb-6",
+      "header": {
+        "label": {
+          "text": "Property type",
+          "className": "block text-sm font-medium text-gray-700 mb-2"
+        }
+      },
+      "body": {
+        "element": {
+          "className": "space-y-2",
+          "checkboxes": [
+            {
+              "id": 8,
+              "className": "flex items-center space-x-3 cursor-pointer",
+              "label": {
+                "htmlFor": "apartment",
+                "text": "Apartment",
+                "className": "text-gray-700 cursor-pointer"
+              },
+              "attr": {
+                "id": "apartment",
+                "type": "checkbox",
+                "name": "apartment",
+                "className": "custom-checkbox"
+              }
+            },
+            {
+              "id": 9,
+              "className": "flex items-center space-x-3 cursor-pointer",
+              "label": {
+                "htmlFor": "house",
+                "text": "House",
+                "className": "text-gray-700 cursor-pointer"
+              },
+              "attr": {
+                "id": "house",
+                "type": "checkbox",
+                "name": "house",
+                "className": "custom-checkbox"
+              }
+            },
+            {
+              "id": 10,
+              "className": "flex items-center space-x-3 cursor-pointer",
+              "label": {
+                "htmlFor": "villa",
+                "text": "Villa",
+                "className": "text-gray-700 cursor-pointer"
+              },
+              "attr": {
+                "id": "villa",
+                "type": "checkbox",
+                "name": "villa",
+                "className": "custom-checkbox"
+              }
+            },
+            {
+              "id": 11,
+              "className": "flex items-center space-x-3 cursor-pointer",
+              "label": {
+                "htmlFor": "condo",
+                "text": "Condo",
+                "className": "text-gray-700 cursor-pointer"
+              },
+              "attr": {
+                "id": "condo",
+                "type": "checkbox",
+                "name": "condo",
+                "className": "custom-checkbox"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 19,
+      "component": "Checkbox",
+      "className": "mb-6",
+      "header": {
+        "label": {
+          "text": "Amenities",
+          "className": "block text-sm font-medium text-gray-700 mb-2"
+        }
+      },
+      "body": {
+        "element": {
+          "className": "space-y-2",
+          "checkboxes": [
+            {
+              "id": 12,
+              "className": "flex items-center space-x-3 cursor-pointer",
+              "label": {
+                "htmlFor": "wifi",
+                "text": "WiFi",
+                "className": "text-gray-700 cursor-pointer"
+              },
+              "attr": {
+                "id": "wifi",
+                "type": "checkbox",
+                "name": "wifi",
+                "className": "custom-checkbox"
+              }
+            },
+            {
+              "id": 13,
+              "className": "flex items-center space-x-3 cursor-pointer",
+              "label": {
+                "htmlFor": "pool",
+                "text": "Pool",
+                "className": "text-gray-700 cursor-pointer"
+              },
+              "attr": {
+                "id": "pool",
+                "type": "checkbox",
+                "name": "pool",
+                "className": "custom-checkbox"
+              }
+            },
+            {
+              "id": 14,
+              "className": "flex items-center space-x-3 cursor-pointer",
+              "label": {
+                "htmlFor": "kitchen",
+                "text": "Kitchen",
+                "className": "text-gray-700 cursor-pointer"
+              },
+              "attr": {
+                "id": "kitchen",
+                "type": "checkbox",
+                "name": "kitchen",
+                "className": "custom-checkbox"
+              }
+            },
+            {
+              "id": 15,
+              "className": "flex items-center space-x-3 cursor-pointer",
+              "label": {
+                "htmlFor": "parking",
+                "text": "Parking",
+                "className": "text-gray-700 cursor-pointer"
+              },
+              "attr": {
+                "id": "parking",
+                "type": "checkbox",
+                "name": "parking",
+                "className": "custom-checkbox"
+              }
+            },
+            {
+              "id": 16,
+              "className": "flex items-center space-x-3 cursor-pointer",
+              "label": {
+                "htmlFor": "air_conditioning",
+                "text": "Air conditioning",
+                "className": "text-gray-700 cursor-pointer"
+              },
+              "attr": {
+                "id": "air_conditioning",
+                "type": "checkbox",
+                "name": "air_conditioning",
+                "className": "custom-checkbox"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 18,
+      "component": "Button",
+      "body": {
+        "element": {
+          "attr": {
+            "type": "submit",
+            "className": "w-full cursor-pointer bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-lg font-medium transition"
+          },
+          "text": "Apply filters"
+        }
+      }
+    }
+  ]
+}

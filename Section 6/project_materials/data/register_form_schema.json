@@ -1,0 +1,113 @@
+{
+  "id": 90214710,
+  "fields": [
+    {
+      "id": 1,
+      "className": "grid grid-cols-1 md:grid-cols-2 gap-6 mb-6",
+      "grid": [
+        {
+          "id": 2,
+          "component": "TextInput",
+          "className": "",
+          "header": {
+            "label": {
+              "htmlFor": "first_name",
+              "text": "First name",
+              "className": "block text-sm font-medium text-gray-300 mb-1"
+            }
+          },
+          "body": {
+            "element": {
+              "attr": {
+                "id": "first_name",
+                "type": "text",
+                "name": "first_name",
+                "placeholder": "John",
+                "required": true,
+                "className": "w-full px-4 py-3 rounded-lg border border-gray-700 bg-gray-700 text-white focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+              }
+            }
+          }
+        },
+        {
+          "id": 3,
+          "component": "TextInput",
+          "className": "",
+          "header": {
+            "label": {
+              "htmlFor": "last_name",
+              "text": "Last name",
+              "className": "block text-sm font-medium text-gray-300 mb-1"
+            }
+          },
+          "body": {
+            "element": {
+              "attr": {
+                "id": "last_name",
+                "type": "text",
+                "name": "last_name",
+                "placeholder": "Doe",
+                "required": true,
+                "className": "w-full px-4 py-3 rounded-lg border border-gray-700 bg-gray-700 text-white focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "component": "TextInput",
+      "className": "mb-6",
+      "header": {
+        "label": {
+          "htmlFor": "email",
+          "text": "Email address",
+          "className": "block text-sm font-medium text-gray-300 mb-1"
+        }
+      },
+      "body": {
+        "element": {
+          "attr": {
+            "id": "email",
+            "type": "email",
+            "name": "email",
+            "placeholder": "you@example.com",
+            "required": true,
+            "className": "w-full px-4 py-3 rounded-lg border border-gray-700 bg-gray-700 text-white focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+          }
+        }
+      }
+    },
+    {
+      "id": 5,
+      "component": "TextInput",
+      "className": "mb-6",
+      "header": {
+        "label": {
+          "htmlFor": "password",
+          "text": "Password",
+          "className": "block text-sm font-medium text-gray-300 mb-1"
+        }
+      },
+      "body": {
+        "element": {
+          "attr": {
+            "id": "password",
+            "type": "password",
+            "name": "password",
+            "placeholder": "••••••••",
+            "required": true,
+            "className": "w-full px-4 py-3 rounded-lg border border-gray-700 bg-gray-700 text-white focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+          }
+        }
+      },
+      "footer": {
+        "note": {
+          "text": "Must be at least 8 characters",
+          "className": "mt-1 ml-1 text-xs text-gray-400"
+        }
+      }
+    }
+  ]
+}

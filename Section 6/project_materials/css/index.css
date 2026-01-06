@@ -1,0 +1,23 @@
+
+@import "tailwindcss";
+
+.question_correct {
+  background: #0bf3728a;
+  border: 1px solid #164116;
+}
+
+.question_correct div div {
+  border: 1px solid #c6c6c6;
+}
+
+.question_incorrect {
+  background: #f30b0b8a;
+  border: 1px solid #411616;
+}
+
+.light .bg-gray-800 { background-color: #e7e7e7;}
+.light .text-gray-300 { color: #3f3f3f;}
+.light .text-gray-400 { color: #3f3f3f;}
+.light .border-gray-700 { border: 1px solid #d2d2d2;}
+
+

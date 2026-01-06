@@ -1,0 +1,179 @@
+{
+  "id": 8890,
+  "theme": "customer-service",
+  "fields": [
+    {
+      "id": 1,
+      "component": "TextInput",
+      "className": "mb-5",
+      "header": {
+        "label": {
+          "htmlFor": "customerName",
+          "text": "Your Name",
+          "className": "block text-sm font-medium text-gray-700 mb-1",
+          "requiredIndicator": {
+            "className": "text-red-500",
+            "icon": " *"
+          }
+        }
+      },
+      "body": {
+        "element": {
+          "attr": {
+            "id": "customerName",
+            "type": "text",
+            "name": "customerName",
+            "required": true,
+            "className": "w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-blue-400 transition-colors"
+          }
+        }
+      }
+    },
+    {
+      "id": 2,
+      "component": "TextInput",
+      "className": "mb-5",
+      "header": {
+        "label": {
+          "htmlFor": "orderNumber",
+          "text": "Order Number",
+          "className": "block text-sm font-medium text-gray-700 mb-1",
+          "requiredIndicator": {
+            "className": "text-gray-500",
+            "icon": " (if applicable)"
+          }
+        }
+      },
+      "body": {
+        "element": {
+          "attr": {
+            "id": "orderNumber",
+            "type": "text",
+            "name": "orderNumber",
+            "className": "w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-blue-400 transition-colors"
+          }
+        }
+      }
+    },
+    {
+      "id": 3,
+      "component": "TextInput",
+      "className": "mb-5",
+      "header": {
+        "label": {
+          "htmlFor": "email",
+          "text": "Email Address",
+          "className": "block text-sm font-medium text-gray-700 mb-1",
+          "requiredIndicator": {
+            "className": "text-red-500",
+            "icon": " *"
+          }
+        }
+      },
+      "body": {
+        "element": {
+          "attr": {
+            "id": "email",
+            "type": "text",
+            "name": "email",
+            "required": true,
+            "className": "w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-blue-400 transition-colors"
+          }
+        }
+      }
+    },
+    {
+      "id": 4,
+      "component": "TextInput",
+      "className": "mb-5",
+      "header": {
+        "label": {
+          "htmlFor": "phone",
+          "text": "Phone Number",
+          "className": "block text-sm font-medium text-gray-700 mb-1",
+          "requiredIndicator": {
+            "className": "text-gray-500",
+            "icon": " (optional)"
+          }
+        }
+      },
+      "body": {
+        "element": {
+          "attr": {
+            "id": "phone",
+            "type": "tel",
+            "name": "phone",
+            "className": "w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-blue-400 transition-colors"
+          }
+        }
+      }
+    },
+    {
+      "id": 5,
+      "component": "TextInput",
+      "className": "mb-5",
+      "header": {
+        "label": {
+          "htmlFor": "subject",
+          "text": "Subject",
+          "className": "block text-sm font-medium text-gray-700 mb-1",
+          "requiredIndicator": {
+            "className": "text-red-500",
+            "icon": " *"
+          }
+        }
+      },
+      "body": {
+        "element": {
+          "attr": {
+            "id": "subject",
+            "type": "text",
+            "name": "subject",
+            "required": true,
+            "className": "w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-blue-400 transition-colors"
+          }
+        }
+      }
+    },
+    {
+      "id": 6,
+      "component": "TextInput",
+      "className": "mb-5",
+      "header": {
+        "label": {
+          "htmlFor": "message",
+          "text": "Your Message",
+          "className": "block text-sm font-medium text-gray-700 mb-1",
+          "requiredIndicator": {
+            "className": "text-red-500",
+            "icon": " *"
+          }
+        }
+      },
+      "body": {
+        "element": {
+          "attr": {
+            "id": "message",
+            "type": "text",
+            "name": "message",
+            "required": true,
+            "className": "w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-blue-400 transition-colors h-32"
+          }
+        }
+      }
+    },
+    {
+      "id": 7,
+      "component": "Button",
+      "body": {
+        "element": {
+          "text": "Submit Inquiry",
+          "attr": {
+            "type": "submit",
+            "className": "w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg transition-colors"
+          }
+        }
+      }
+    }
+  ]
+}

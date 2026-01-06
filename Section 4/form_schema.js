@@ -1,0 +1,106 @@
+const formSchema = {
+  id: 1234,
+  fields: [
+    {
+      id: 1,
+      component: "TextInput",
+      className: 'mb-6',
+      header: {
+        label: {
+          htmlFor: 'firstName',
+          text: "First Name",
+          className: "inline-block text-sm font-medium text-gray-700 mb-1",
+          requiredIndicator: { className: "text-red-500", icon: " *"}
+        }
+      },
+      body: {
+        element: {
+          attr: {
+            id: "firstName",
+            type: "text",
+            name: "firstName",
+            minLength: 3,
+            required: true,
+            className: "w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+          }
+        }
+      },
+      footer: {
+        note: { text: "Note...", className: "text-gray-400 text-sm ml-2 mt-1"}
+      }
+    },
+    {
+      id: 2,
+      component: "TextInput",
+      className: 'mb-6',
+      header: {
+        label: {
+          htmlFor: 'lastName',
+          text: "Last Name",
+          className: "inline-block text-sm font-medium text-gray-700 mb-1",
+          requiredIndicator: { className: "text-red-500", icon: " *"}
+        }
+      },
+      body: {
+        element: {
+          attr: {
+            id: "lastName",
+            type: "text",
+            name: "lastName",
+            minLength: 3,
+            required: true,
+            className: "w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+          }
+        }
+      },
+      footer: {
+        note: { text: "Note...", className: "text-gray-400 text-sm ml-2 mt-1"}
+      }
+    },
+    {
+      id: 3,
+      component: "TextInput",
+      className: 'mb-6',
+      header: {
+        label: {
+          htmlFor: 'email',
+          text: "Email",
+          className: "inline-block text-sm font-medium text-gray-700 mb-1",
+          requiredIndicator: { className: "text-red-500", icon: " *"}
+        }
+      },
+      body: {
+        element: {
+          attr: {
+            id: "email",
+            type: "email",
+            name: "email",
+            minLength: 3,
+            pattern: "[a-zA-Z0-9._%+\\-]+@[a-zA-Z0-9.\\-]+\\.[a-zA-Z]{2,}",
+            required: true,
+            className: "w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+          },
+          customValidity: {
+            msg: "Please enter a valid email address."
+          }
+        }
+      },
+      footer: {
+        note: { text: "Note...", className: "text-gray-400 text-sm ml-2 mt-1"}
+      }
+    },
+    {
+      id: 4,
+      component: "Button",
+      body: {
+        element: {
+          text: "Submit Application",
+          attr: {
+            type: "submit",
+            className: "px-6 py-3 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 shadow-lg transition-all duration-200 transform hover:scale-105"
+          }
+        }
+      }
+    }
+  ]
+}

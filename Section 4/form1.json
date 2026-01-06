@@ -1,0 +1,138 @@
+{
+  "id": 5678,
+  "fields": [
+    {
+      "id": 1,
+      "component": "TextInput",
+      "className": "mb-6",
+      "header": {
+        "label": {
+          "htmlFor": "fullName",
+          "text": "Full Name",
+          "className": "block text-sm font-medium text-gray-700 mb-2",
+          "requiredIndicator": { "className": "text-red-500", "icon": " *" }
+        }
+      },
+      "body": {
+        "element": {
+          "attr": {
+            "id": "fullName",
+            "type": "text",
+            "name": "fullName",
+            "minLength": 3,
+            "required": true,
+            "className": "w-full px-4 py-3 bg-gray-50 border-0 border-b-2 border-gray-300 focus:border-purple-600 focus:ring-0 transition-all duration-300 rounded-t-md"
+          }
+        }
+      },
+      "footer": {
+        "note": { "text": "Enter your complete name", "className": "text-gray-500 text-xs mt-1" }
+      }
+    },
+    {
+      "id": 2,
+      "component": "TextInput",
+      "className": "mb-6",
+      "header": {
+        "label": {
+          "htmlFor": "username",
+          "text": "Username",
+          "className": "block text-sm font-medium text-gray-700 mb-2",
+          "requiredIndicator": { "className": "text-red-500", "icon": " *" }
+        }
+      },
+      "body": {
+        "element": {
+          "attr": {
+            "id": "username",
+            "type": "text",
+            "name": "username",
+            "pattern": "[a-zA-Z0-9_]{4,20}",
+            "required": true,
+            "className": "w-full px-4 py-3 bg-gray-50 border-0 border-b-2 border-gray-300 focus:border-purple-600 focus:ring-0 transition-all duration-300 rounded-t-md"
+          },
+          "customValidity": {
+            "msg": "Username must be 4-20 characters and can only contain letters, numbers, and underscores."
+          }
+        }
+      },
+      "footer": {
+        "note": { "text": "4-20 characters, letters, numbers, and underscores only", "className": "text-gray-500 text-xs mt-1" }
+      }
+    },
+    {
+      "id": 3,
+      "component": "TextInput",
+      "className": "mb-6",
+      "header": {
+        "label": {
+          "htmlFor": "email",
+          "text": "Email Address",
+          "className": "block text-sm font-medium text-gray-700 mb-2",
+          "requiredIndicator": { "className": "text-red-500", "icon": " *" }
+        }
+      },
+      "body": {
+        "element": {
+          "attr": {
+            "id": "email",
+            "type": "email",
+            "name": "email",
+            "pattern": "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}",
+            "required": true,
+            "className": "w-full px-4 py-3 bg-gray-50 border-0 border-b-2 border-gray-300 focus:border-purple-600 focus:ring-0 transition-all duration-300 rounded-t-md"
+          },
+          "customValidity": {
+            "msg": "Please enter a valid email address (e.g., user@example.com)."
+          }
+        }
+      },
+      "footer": {
+        "note": { "text": "We'll never share your email with anyone else", "className": "text-gray-500 text-xs mt-1" }
+      }
+    },
+    {
+      "id": 4,
+      "component": "TextInput",
+      "className": "mb-6",
+      "header": {
+        "label": {
+          "htmlFor": "phone",
+          "text": "Phone Number",
+          "className": "block text-sm font-medium text-gray-700 mb-2",
+          "requiredIndicator": { "className": "text-gray-500", "icon": " (optional)" }
+        }
+      },
+      "body": {
+        "element": {
+          "attr": {
+            "id": "phone",
+            "type": "tel",
+            "name": "phone",
+            "pattern": "[0-9]{3}-[0-9]{3}-[0-9]{4}",
+            "className": "w-full px-4 py-3 bg-gray-50 border-0 border-b-2 border-gray-300 focus:border-purple-600 focus:ring-0 transition-all duration-300 rounded-t-md"
+          },
+          "customValidity": {
+            "msg": "Please enter a valid phone number (e.g., 123-456-7890)."
+          }
+        }
+      },
+      "footer": {
+        "note": { "text": "Format: 123-456-7890", "className": "text-gray-500 text-xs mt-1" }
+      }
+    },
+    {
+      "id": 5,
+      "component": "Button",
+      "body": {
+        "element": {
+          "text": "Create Account",
+          "attr": {
+            "type": "submit",
+            "className": "w-full py-4 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-bold rounded-lg shadow-lg hover:from-purple-700 hover:to-indigo-700 focus:outline-none focus:ring-4 focus:ring-purple-400 transition-all duration-300 transform hover:scale-[1.02]"
+          }
+        }
+      }
+    }
+  ]
+}
