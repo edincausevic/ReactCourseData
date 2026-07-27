@@ -166,6 +166,74 @@ const Dashboard = () => {
         </div>
       </div>
     </div>
+
+    <a
+      href="https://edincausevic.github.io/course_promotions/"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{
+        position: 'fixed',
+        bottom: '24px',
+        right: '24px',
+        display: 'inline-flex',
+        alignItems: 'center',
+        gap: '10px',
+        padding: '12px 20px',
+        background: 'linear-gradient(135deg, #a435f0 0%, #7514d0 100%)',
+        color: '#ffffff',
+        fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+        fontSize: '14px',
+        fontWeight: 600,
+        textDecoration: 'none',
+        borderRadius: '50px',
+        boxShadow: '0 10px 25px -5px rgba(117, 20, 208, 0.4), 0 8px 10px -6px rgba(117, 20, 208, 0.4)',
+        transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+        zIndex: 9999,
+        backdropFilter: 'blur(8px)',
+        border: '1px solid rgba(255, 255, 255, 0.15)',
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.transform = 'translateY(-3px)';
+        e.currentTarget.style.boxShadow = '0 15px 30px -5px rgba(117, 20, 208, 0.5), 0 10px 12px -6px rgba(117, 20, 208, 0.5)';
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.transform = 'translateY(0)';
+        e.currentTarget.style.boxShadow = '0 10px 25px -5px rgba(117, 20, 208, 0.4), 0 8px 10px -6px rgba(117, 20, 208, 0.4)';
+      }}
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        style={{ flexShrink: 0 }}
+      >
+        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z" />
+        <path d="M6 6h10" />
+        <path d="M6 10h10" />
+      </svg>
+      <span>Explore My Courses</span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        style={{ flexShrink: 0, opacity: 0.8 }}
+      >
+        <path d="M7 17l9-9" />
+        <path d="M7 7h10v10" />
+      </svg>
+    </a>
   </footer>
 </div>
   );
